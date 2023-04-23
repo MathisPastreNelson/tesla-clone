@@ -1,0 +1,62 @@
+.Car_container {
+  height: 100vh;
+  width: 100%;
+  background: url("../assets/Homepage-Model-Y-Global-Desktop.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.CarTitleBox {
+  padding-top: 16vh;
+}
+
+.CarTitle {
+  font-size: 2.5rem;
+  font-weight: 350;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.CarReserve {
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin: 1vh auto;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
+.CarButtonBox {
+  width: 100%;
+  margin-top: 65vh;
+  display: flex;
+  justify-content: center;
+}
+
+.CarButtonBox > * {
+  margin: 0 1rem;
+  color: white;
+  height: 4.5vh;
+  min-width: 330px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.CarButtonBox > button:first-child {
+  background-color: rgb(63, 63, 63);
+  border: 0;
+}
+
+.CarButtonBox > button:last-child {
+  background-color: #e5e5e5;
+  color: black;
+  border: 0;
+}
+
+.CarInformations {
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 3vh;
+  font-size: 0.8rem;
+  text-underline-offset: 0.2rem;
+}

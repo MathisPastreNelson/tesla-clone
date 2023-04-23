@@ -4,41 +4,133 @@
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   height: 6vh;
   font-size: 0.9rem;
-  padding: 0 2rem;
-  background-color: salmon;
 }
 
 .logoHeader {
+  padding: 0 0.9rem;
   width: 120px;
-  height: 50px;
   -o-object-fit: cover;
      object-fit: cover;
+  height: 6vh;
 }
 
 .textHeader_box {
-  min-width: 68%;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   align-items: center;
 }
 
 .productHeader_box > * {
-  padding: 0 0.9rem;
+  padding: 0.5rem 0.9rem;
   text-decoration: none;
   color: black;
+  transition: 300ms ease-in-out;
+  border-radius: 5px;
+}
+
+.textHeader_box > nav > *:hover {
+  background-color: #f2f2f2;
+}
+
+.menuHeader_box {
+  justify-self: end;
 }
 
 .menuHeader_box > * {
-  padding: 0 0.9rem;
+  padding: 0.5rem 0.9rem;
   text-decoration: none;
   color: black;
+  border-radius: 5px;
+}
+
+.menuHeader_button {
+  margin-right: 0.9rem;
+  background: none;
+  border: 0px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.Car_container {
+  height: 100vh;
+  width: 100%;
+  background: url("../assets/Homepage-Model-Y-Global-Desktop.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.CarTitleBox {
+  padding-top: 16vh;
+}
+
+.CarTitle {
+  font-size: 2.5rem;
+  font-weight: 350;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.CarReserve {
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin: 1vh auto;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
+.CarButtonBox {
+  width: 100%;
+  margin-top: 65vh;
+  display: flex;
+  justify-content: center;
+}
+
+.CarButtonBox > * {
+  margin: 0 1rem;
+  color: white;
+  height: 4.5vh;
+  min-width: 330px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.CarButtonBox > button:first-child {
+  background-color: rgb(63, 63, 63);
+  border: 0;
+}
+
+.CarButtonBox > button:last-child {
+  background-color: #e5e5e5;
+  color: black;
+  border: 0;
+}
+
+.CarInformations {
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 3vh;
+  font-size: 0.8rem;
+  text-underline-offset: 0.2rem;
 }
 
 footer {
   text-align: center;
+  position: absolute;
+  bottom: -100vh;
+  width: 100%;
+  background-color: salmon;
 }/*# sourceMappingURL=index.css.map */

@@ -1,34 +1,60 @@
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   height: 6vh;
   font-size: 0.9rem;
-  padding: 0 2rem;
-  background-color: salmon;
 }
 
 .logoHeader {
+  padding: 0 0.9rem;
   width: 120px;
-  height: 50px;
   object-fit: cover;
+  height: 6vh;
 }
 
 .textHeader_box {
-  min-width: 68%;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   align-items: center;
 }
 
 .productHeader_box > * {
-  padding: 0 0.9rem;
+  padding: 0.5rem 0.9rem;
   text-decoration: none;
   color: black;
+  transition: 300ms ease-in-out;
+  border-radius: 5px;
+}
+
+.textHeader_box > nav > *:hover {
+  background-color: #f2f2f2;
+}
+
+.menuHeader_box {
+  justify-self: end;
 }
 
 .menuHeader_box > * {
-  padding: 0 0.9rem;
+  padding: 0.5rem 0.9rem;
   text-decoration: none;
   color: black;
+  border-radius: 5px;
+}
+
+.menuHeader_button {
+  margin-right: 0.9rem;
+  background: none;
+  border: 0px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
 }
