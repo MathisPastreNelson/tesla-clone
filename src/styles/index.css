@@ -3,6 +3,10 @@
   font-family: "Gotham SSm", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 header {
   width: 100%;
   position: fixed;
