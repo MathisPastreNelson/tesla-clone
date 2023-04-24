@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 
 export default function Home() {
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [touchStartY, setTouchStartY] = useState(0);
 
   useEffect(() => {
     const handleScroll = (event) => {
@@ -28,12 +29,17 @@ export default function Home() {
       }
     };
 
+    const handleTouchStart = (event) => {
+      const { touches } = event;
+      setTouchStartY(touches[0].clientY);
+    };
+
     const handleTouchMove = (event) => {
       event.preventDefault();
       const { touches } = event;
-      const { clientY } = touches[0];
+      const touchCurrentY = touches[0].clientY;
 
-      if (clientY < window.innerHeight / 2) {
+      if (touchCurrentY > touchStartY) {
         setScrollPosition((prevPosition) => prevPosition - window.innerHeight);
       } else {
         setScrollPosition((prevPosition) => prevPosition + window.innerHeight);
@@ -42,14 +48,16 @@ export default function Home() {
 
     window.addEventListener("wheel", handleScroll, { passive: false });
     window.addEventListener("keydown", handleKeyDown);
+    window.addEventListener("touchstart", handleTouchStart, { passive: false });
     window.addEventListener("touchmove", handleTouchMove, { passive: false });
 
     return () => {
       window.removeEventListener("wheel", handleScroll);
       window.removeEventListener("keydown", handleKeyDown);
+      window.removeEventListener("touchstart", handleTouchStart);
       window.removeEventListener("touchmove", handleTouchMove);
     };
-  }, []);
+  }, [touchStartY]);
 
   useEffect(() => {
     window.scrollTo({ top: scrollPosition, behavior: "smooth" });
