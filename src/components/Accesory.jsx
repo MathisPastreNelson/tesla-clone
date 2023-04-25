@@ -10,7 +10,7 @@ export default function ModelS() {
         <button>Commander maintenant</button>
       </div>
       <footer>
-        <div>
+        <div className="covoiturage">
           <p>Pensez à covoiturer #SeDéplacerMoinsPolluer</p>
         </div>
         <div>

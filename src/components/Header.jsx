@@ -15,30 +15,24 @@ export default function Header() {
   return (
     <header>
       <img src={logo} className="logoHeader" alt="logo" />
-      {windowWidth > 1200 ? (
-        <div className="textHeader_box">
-          <nav className="productHeader_box">
-            <a href="#">Model S</a>
-            <a href="#">Model 3</a>
-            <a href="#">Model X</a>
-            <a href="#">Model Y</a>
-            <a href="#">Powerwall</a>
-            <a href="#">Recharge</a>
-          </nav>
-          <nav className="menuHeader_box">
-            <a href="#">Assistance</a>
-            <a href="#">Shop</a>
-            <a href="#">Compte</a>
-            <button className="menuHeader_button" onClick={toggleSidebar}>
-              Menu
-            </button>
-          </nav>
-        </div>
-      ) : (
+
+      <nav className="productHeader_box">
+        <a href="#">Model S</a>
+        <a href="#">Model 3</a>
+        <a href="#">Model X</a>
+        <a href="#">Model Y</a>
+        <a href="#">Powerwall</a>
+        <a href="#">Recharge</a>
+      </nav>
+
+      <nav className="menuHeader_box">
+        <a href="#">Assistance</a>
+        <a href="#">Shop</a>
+        <a href="#">Compte</a>
         <button className="menuHeader_button" onClick={toggleSidebar}>
-          test
+          Menu
         </button>
-      )}
+      </nav>
     </header>
   );
 }

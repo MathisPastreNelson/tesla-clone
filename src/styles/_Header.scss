@@ -3,7 +3,9 @@ header {
   position: fixed;
   top: 0;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  text-align: center;
+  grid-template-columns: 2fr 3fr 2fr;
   height: 6vh;
   font-size: 0.9rem;
 }
@@ -17,7 +19,6 @@ header {
 
 .textHeader_box {
   display: grid;
-  grid-template-columns: 2fr 1fr;
   align-items: center;
 }
 
@@ -52,9 +53,8 @@ header {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1350px) {
   header {
-    display: flex;
-    justify-content: space-between;
+    grid-template-columns: 2fr 3fr 2fr;
   }
 }

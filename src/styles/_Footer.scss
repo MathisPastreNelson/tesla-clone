@@ -1,11 +1,11 @@
 footer {
   width: 100%;
-  background-color: salmon;
+
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
-  margin-top: 5vh;
+  margin-top: 4vh;
   font-size: 0.75rem;
-  color: rgb(77, 77, 77);
+  color: rgb(116, 116, 116);
 }
 
 footer > div {
@@ -17,11 +17,11 @@ footer > div > p {
   padding: 0 0.5rem;
 }
 
-@media screen and (max-device-width: 684px) {
+@media screen and (max-device-width: 984px) {
   footer {
     display: flex;
     flex-direction: column;
-    margin-top: 10vh;
+    margin-top: 3vh;
   }
 
   footer > div {
@@ -31,5 +31,9 @@ footer > div > p {
 
   footer > div > p {
     padding: 0.25rem 0rem;
+  }
+
+  .covoiturage {
+    margin-bottom: 3vh;
   }
 }

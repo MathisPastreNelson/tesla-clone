@@ -20,7 +20,9 @@ header {
   position: fixed;
   top: 0;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  text-align: center;
+  grid-template-columns: 2fr 3fr 2fr;
   height: 6vh;
   font-size: 0.9rem;
 }
@@ -35,7 +37,6 @@ header {
 
 .textHeader_box {
   display: grid;
-  grid-template-columns: 2fr 1fr;
   align-items: center;
 }
 
@@ -70,10 +71,9 @@ header {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1350px) {
   header {
-    display: flex;
-    justify-content: space-between;
+    grid-template-columns: 2fr 3fr 2fr;
   }
 }
 .Car_container {
@@ -169,7 +169,7 @@ header {
 
 .CarButtonBox {
   width: 100%;
-  margin-top: 60vh;
+  margin-top: 63vh;
   display: flex;
   justify-content: center;
 }
@@ -177,7 +177,7 @@ header {
 .CarButtonBox > * {
   margin: 0 1rem;
   height: 4.5vh;
-  min-width: 310px;
+  min-width: 300px;
   border-radius: 5px;
   font-size: 0.9rem;
   font-weight: bold;
@@ -199,7 +199,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 60vh;
+  margin-top: 62vh;
 }
 
 .CarButtonBoxEnergy > * {
@@ -208,7 +208,7 @@ header {
   border: 0;
   height: 4.5vh;
   font-weight: bold;
-  min-width: 310px;
+  width: 300px;
   font-size: 0.9rem;
   border-radius: 5px;
 }
@@ -217,7 +217,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 70vh;
+  margin-top: 65vh;
 }
 
 .CarButtonBoxAccesory > button {
@@ -226,7 +226,7 @@ header {
   border: 0;
   margin: 0 1rem;
   height: 4.5vh;
-  min-width: 310px;
+  width: 300px;
   border-radius: 5px;
   font-size: 0.9rem;
   font-weight: bold;
@@ -235,7 +235,7 @@ header {
 .CarInformations {
   text-align: center;
   text-decoration: underline;
-  margin-top: 2.5vh;
+  margin-top: 4vh;
   font-size: 0.8rem;
   text-underline-offset: 0.2rem;
   color: #171a20;
@@ -244,38 +244,38 @@ header {
 @media screen and (max-device-width: 684px) {
   .Car_container {
     background: url("../assets/Homepage-ModelY-LHD-Mobile.jpg");
-    background-position: 50% 50%;
+    background-position: 50% 30%;
     background-size: cover;
     width: 100%;
   }
   .Car_container2 {
     background: url("../assets/Homepage-Model-3-LHD-Mobile.jpg");
-    background-position: 50% 50%;
+    background-position: 50% 30%;
     background-size: cover;
     width: 100%;
   }
   .Car_container3 {
     background: url("../assets/Model-S-homepage-mobile.jpg");
-    background-position: 50% 50%;
+    background-position: 50% 30%;
     background-size: cover;
     width: 100%;
   }
   /*test*/
   .Car_container4 {
     background: url("../assets/Homepage-Model-X-Mobile-LHD-v2-412.jpg");
-    background-position: 50% 50%;
+    background-position: 50% 30%;
     background-size: cover;
     width: 100%;
   }
   .Car_container5 {
     background: url("../assets/Homepage-SolarPanels-Mobile.jpg");
-    background-position: 50% 50%;
+    background-position: 50% 30%;
     background-size: cover;
     width: 100%;
   }
   .Car_container6 {
     background: url("../assets/Homepage-Accessories-Mobile.jpg");
-    background-position: 50% 50%;
+    background-position: 50% 30%;
     background-size: cover;
     width: 100%;
   }
@@ -291,7 +291,7 @@ header {
   }
   .CarButtonBox {
     flex-direction: column;
-    margin-top: 58vh;
+    margin-top: 54vh;
   }
   .CarButtonBox > * {
     width: 90%;
@@ -314,12 +314,11 @@ header {
 }
 footer {
   width: 100%;
-  background-color: salmon;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
-  margin-top: 5vh;
+  margin-top: 4vh;
   font-size: 0.75rem;
-  color: rgb(77, 77, 77);
+  color: rgb(116, 116, 116);
 }
 
 footer > div {
@@ -332,11 +331,11 @@ footer > div > p {
   padding: 0 0.5rem;
 }
 
-@media screen and (max-device-width: 684px) {
+@media screen and (max-device-width: 984px) {
   footer {
     display: flex;
     flex-direction: column;
-    margin-top: 10vh;
+    margin-top: 3vh;
   }
   footer > div {
     display: flex;
@@ -344,5 +343,8 @@ footer > div > p {
   }
   footer > div > p {
     padding: 0.25rem 0rem;
+  }
+  .covoiturage {
+    margin-bottom: 3vh;
   }
 }/*# sourceMappingURL=index.css.map */
