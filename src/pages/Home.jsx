@@ -34,11 +34,12 @@ export default function Home() {
       setTouchStartY(touches[0].clientY);
     };
 
-    const handleTouchEnd = (event) => {
-      const { changedTouches } = event;
-      const touchEndY = changedTouches[0].clientY;
+    const handleTouchMove = (event) => {
+      event.preventDefault();
+      const { touches } = event;
+      const touchCurrentY = touches[0].clientY;
 
-      if (touchEndY > touchStartY) {
+      if (touchCurrentY > touchStartY) {
         setScrollPosition((prevPosition) => prevPosition - window.innerHeight);
       } else {
         setScrollPosition((prevPosition) => prevPosition + window.innerHeight);
@@ -48,13 +49,13 @@ export default function Home() {
     window.addEventListener("wheel", handleScroll, { passive: false });
     window.addEventListener("keydown", handleKeyDown);
     window.addEventListener("touchstart", handleTouchStart, { passive: false });
-    window.addEventListener("touchend", handleTouchEnd, { passive: false });
+    window.addEventListener("touchmove", handleTouchMove, { passive: false });
 
     return () => {
       window.removeEventListener("wheel", handleScroll);
       window.removeEventListener("keydown", handleKeyDown);
       window.removeEventListener("touchstart", handleTouchStart);
-      window.removeEventListener("touchend", handleTouchEnd);
+      window.removeEventListener("touchmove", handleTouchMove);
     };
   }, [touchStartY]);
 
