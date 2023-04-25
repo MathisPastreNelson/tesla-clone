@@ -20,7 +20,6 @@ export default function Home() {
         <HomeTesla />
         <Accesory />
       </div>
-      <Footer />
     </div>
   );
 }

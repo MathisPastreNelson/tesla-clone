@@ -67,6 +67,7 @@
   font-weight: 350;
   margin: 0 auto;
   text-align: center;
+  color: #171a20;
 }
 
 .CarReserve {
@@ -76,6 +77,16 @@
   text-align: center;
   text-decoration: underline;
   text-underline-offset: 0.3rem;
+  color: #171a20;
+}
+
+.CarInformationSup {
+  font-size: 1rem;
+
+  margin: 1vh auto;
+  text-align: center;
+  text-underline-offset: 0.3rem;
+  color: #171a20;
 }
 
 .CarButtonBox {
@@ -89,26 +100,44 @@
   margin: 0 1rem;
   color: white;
   height: 4.5vh;
-  min-width: 330px;
+  min-width: 310px;
   border-radius: 5px;
   font-size: 0.9rem;
+  font-weight: bold;
 }
 
 .CarButtonBox > button:first-child {
-  background-color: rgb(63, 63, 63);
+  background-color: rgba(39, 39, 39, 0.886);
   border: 0;
 }
 
 .CarButtonBox > button:last-child {
-  background-color: #e5e5e5;
-  color: black;
+  background-color: #e5e5e5b6;
+  color: #171a20d1;
   border: 0;
 }
 
 .CarInformations {
   text-align: center;
   text-decoration: underline;
-  margin-top: 3vh;
+  margin-top: 2.5vh;
   font-size: 0.8rem;
   text-underline-offset: 0.2rem;
+  color: #171a20;
+}
+
+@media screen and (max-device-width: 684px) {
+  .CarButtonBox {
+    flex-direction: column;
+    margin-top: 58vh;
+  }
+
+  .CarButtonBox > * {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .CarButtonBox > button:first-child {
+    margin-bottom: 1rem;
+  }
 }

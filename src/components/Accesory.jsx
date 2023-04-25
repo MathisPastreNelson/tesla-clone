@@ -9,6 +9,19 @@ export default function ModelS() {
       <div className="CarButtonBox">
         <button>Commander maintenant</button>
       </div>
+      <footer>
+        <div>
+          <p>Pensez à covoiturer #SeDéplacerMoinsPolluer</p>
+        </div>
+        <div>
+          <p>Tesla © 2023</p>
+          <p>Mentions légales</p>
+          <p>Contact</p>
+          <p>Carrières</p>
+          <p>Actualités</p>
+          <p>Localisations</p>
+        </div>
+      </footer>
     </div>
   );
 }
