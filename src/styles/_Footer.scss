@@ -1,13 +1,25 @@
 footer {
-  margin-top: 4vh;
-  height: 5vh;
-  text-align: center;
+  margin-top: 6vh;
   width: 100%;
   background-color: salmon;
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  font-size: 0.8rem;
 }
 
 footer > div {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer > div > p {
+  padding: 0.5rem;
+}
+
+@media screen and (max-device-width: 684px) {
+  footer > div {
+    display: flex;
+    flex-direction: column;
+  }
 }

@@ -21,6 +21,7 @@ export default function ModelS() {
           <p>Actualités</p>
           <p>Localisations</p>
         </div>
+        <div>{""}</div>
       </footer>
     </div>
   );
