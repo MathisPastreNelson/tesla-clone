@@ -1,11 +1,11 @@
 footer {
-  margin-top: 6vh;
   width: 100%;
   background-color: salmon;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-
-  font-size: 0.8rem;
+  grid-template-columns: 1fr 3fr 1fr;
+  margin-top: 5vh;
+  font-size: 0.75rem;
+  color: rgb(77, 77, 77);
 }
 
 footer > div {
@@ -14,12 +14,22 @@ footer > div {
   align-items: center;
 }
 footer > div > p {
-  padding: 0.5rem;
+  padding: 0 0.5rem;
 }
 
 @media screen and (max-device-width: 684px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+  }
+
   footer > div {
     display: flex;
     flex-direction: column;
+  }
+
+  footer > div > p {
+    padding: 0.25rem 0rem;
   }
 }

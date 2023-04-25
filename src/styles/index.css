@@ -169,14 +169,13 @@ header {
 
 .CarButtonBox {
   width: 100%;
-  margin-top: 65vh;
+  margin-top: 60vh;
   display: flex;
   justify-content: center;
 }
 
 .CarButtonBox > * {
   margin: 0 1rem;
-  color: white;
   height: 4.5vh;
   min-width: 310px;
   border-radius: 5px;
@@ -186,6 +185,7 @@ header {
 
 .CarButtonBox > button:first-child {
   background-color: rgba(39, 39, 39, 0.886);
+  color: white;
   border: 0;
 }
 
@@ -193,6 +193,43 @@ header {
   background-color: rgba(229, 229, 229, 0.7137254902);
   color: rgba(23, 26, 32, 0.8196078431);
   border: 0;
+}
+
+.CarButtonBoxEnergy {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 60vh;
+}
+
+.CarButtonBoxEnergy > * {
+  background-color: rgba(39, 39, 39, 0.886);
+  color: white;
+  border: 0;
+  height: 4.5vh;
+  font-weight: bold;
+  min-width: 310px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+}
+
+.CarButtonBoxAccesory {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 70vh;
+}
+
+.CarButtonBoxAccesory > button {
+  background-color: rgba(39, 39, 39, 0.886);
+  color: white;
+  border: 0;
+  margin: 0 1rem;
+  height: 4.5vh;
+  min-width: 310px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
 }
 
 .CarInformations {
@@ -205,6 +242,53 @@ header {
 }
 
 @media screen and (max-device-width: 684px) {
+  .Car_container {
+    background: url("../assets/Homepage-ModelY-LHD-Mobile.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+  }
+  .Car_container2 {
+    background: url("../assets/Homepage-Model-3-LHD-Mobile.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+  }
+  .Car_container3 {
+    background: url("../assets/Model-S-homepage-mobile.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+  }
+  /*test*/
+  .Car_container4 {
+    background: url("../assets/Homepage-Model-X-Mobile-LHD-v2-412.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+  }
+  .Car_container5 {
+    background: url("../assets/Homepage-SolarPanels-Mobile.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+  }
+  .Car_container6 {
+    background: url("../assets/Homepage-Accessories-Mobile.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+  }
+  .CarTitleBox {
+    padding-top: 20vh;
+  }
+  .CarTitle {
+    font-size: 1.6rem;
+  }
+  .CarInformationSup {
+    font-size: 0.9rem;
+    font-weight: 200;
+  }
   .CarButtonBox {
     flex-direction: column;
     margin-top: 58vh;
@@ -213,17 +297,29 @@ header {
     width: 90%;
     margin: 0 auto;
   }
+  .CarButtonBoxEnergy > * {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .CarButtonBoxAccesory > * {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .CarButtonBoxEnergy {
+    margin-top: 60vh;
+  }
   .CarButtonBox > button:first-child {
     margin-bottom: 1rem;
   }
 }
 footer {
-  margin-top: 6vh;
   width: 100%;
   background-color: salmon;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  font-size: 0.8rem;
+  grid-template-columns: 1fr 3fr 1fr;
+  margin-top: 5vh;
+  font-size: 0.75rem;
+  color: rgb(77, 77, 77);
 }
 
 footer > div {
@@ -233,12 +329,20 @@ footer > div {
 }
 
 footer > div > p {
-  padding: 0.5rem;
+  padding: 0 0.5rem;
 }
 
 @media screen and (max-device-width: 684px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+  }
   footer > div {
     display: flex;
     flex-direction: column;
+  }
+  footer > div > p {
+    padding: 0.25rem 0rem;
   }
 }/*# sourceMappingURL=index.css.map */

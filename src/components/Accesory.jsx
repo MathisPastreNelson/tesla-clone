@@ -6,7 +6,7 @@ export default function ModelS() {
       <div className="CarTitleBox">
         <h2 className="CarTitle">Accessoires</h2>
       </div>
-      <div className="CarButtonBox">
+      <div className="CarButtonBoxAccesory">
         <button>Commander maintenant</button>
       </div>
       <footer>

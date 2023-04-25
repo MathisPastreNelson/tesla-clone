@@ -7,7 +7,7 @@ export default function ModelS() {
         <h2 className="CarTitle">Systèmes d'énergie solaire et Powerwalls</h2>
         <p className="CarInformationSup">De l’énergie pour tous vos besoins</p>
       </div>
-      <div className="CarButtonBox">
+      <div className="CarButtonBoxEnergy">
         <button>En savoir plus</button>
       </div>
     </div>
