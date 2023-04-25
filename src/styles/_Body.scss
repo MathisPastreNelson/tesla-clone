@@ -5,4 +5,11 @@
 
 body {
   overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.scroll-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }

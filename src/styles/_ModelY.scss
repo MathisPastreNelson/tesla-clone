@@ -1,7 +1,59 @@
 .Car_container {
   height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
   width: 100%;
   background: url("../assets/Homepage-Model-Y-Global-Desktop.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.Car_container2 {
+  height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  width: 100%;
+  background: url("../assets/Homepage-Model-3-Desktop-LHD.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.Car_container3 {
+  height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  width: 100%;
+  background: url("../assets/Model-S-homepage-desktop.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+/*test*/
+.Car_container4 {
+  height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  width: 100%;
+  background: url("../assets/Homepage-Model-X-Desktop-LHD.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.Car_container5 {
+  height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  width: 100%;
+  background: url("../assets/27d0055c-b0bf-476c-b3aa-ec59d314f871.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.Car_container6 {
+  height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  width: 100%;
+  background: url("../assets/dd739764-bcaa-4263-9488-8c73bc9fb046.jpg");
   background-position: 50% 50%;
   background-size: cover;
 }
