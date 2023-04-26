@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ModelS() {
   return (
-    <div className="Car_container6">
+    <div id="Car_container6" className="Car_container6">
       <div className="CarTitleBox">
         <h2 className="CarTitle">Accessoires</h2>
       </div>

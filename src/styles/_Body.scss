@@ -13,4 +13,12 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+.blur {
+  filter: blur(5px); /* remplacez 5px par la valeur de flou souhaitée */
+  z-index: -1;
+  position: relative;
+  transition: 200ms ease-in-out;
 }

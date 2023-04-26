@@ -1,13 +1,20 @@
 .sideBarContainer {
   padding: 3vh;
   position: absolute;
-  right: -0rem;
+  right: -135vw;
   top: 0;
-  width: 320px;
+  width: 12vw;
+  min-width: 260px;
   height: 100vh;
-  background-color: red;
+  background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
+  z-index: 1;
+  transition: 400ms ease-in-out;
+}
+
+.show {
+  right: 0vw;
 }
 
 .sideBarButton {
@@ -16,11 +23,21 @@
   display: flex;
   justify-content: end;
   align-items: center;
-  background-color: yellow;
 }
 
 .sideBarLink {
-  padding: 1.5vh 0;
+  padding: 1vh 1vw;
+  margin: 0.3vh;
   color: #171a20;
   text-decoration: none;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-align: left;
+  border-radius: 5px;
+  transition: 300ms ease-in-out;
+}
+
+.sideBarLink:hover {
+  background-color: #dfdfdf;
 }

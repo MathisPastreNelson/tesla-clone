@@ -30,12 +30,16 @@ header {
   border-radius: 5px;
 }
 
-.textHeader_box > nav > *:hover {
-  background-color: #f2f2f2;
+.productHeader_box > *:hover {
+  background-color: #8c8c8c25;
 }
 
 .menuHeader_box {
   justify-self: end;
+}
+
+.menuHeader_box > *:hover {
+  background-color: #8c8c8c25;
 }
 
 .menuHeader_box > * {
@@ -56,5 +60,17 @@ header {
 @media only screen and (max-width: 1350px) {
   header {
     grid-template-columns: 2fr 3fr 2fr;
+  }
+
+  .productHeader_box > * {
+    display: none;
+  }
+
+  .menuHeader_box > a {
+    display: none;
+  }
+
+  .menuHeader_button {
+    background-color: #8c8c8c25;
   }
 }

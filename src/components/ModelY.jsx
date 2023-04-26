@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ModelY() {
   return (
-    <div className="Car_container">
+    <div id="Car_container" className="Car_container">
       <div className="CarTitleBox">
         <h2 className="CarTitle">Model Y</h2>
         <p className="CarReserve">Réservez votre essai</p>

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   font-family: "Gotham SSm", sans-serif;
@@ -13,6 +14,14 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+.blur {
+  filter: blur(5px); /* remplacez 5px par la valeur de flou souhaitée */
+  z-index: -1;
+  position: relative;
+  transition: 200ms ease-in-out;
 }
 
 header {
@@ -48,12 +57,16 @@ header {
   border-radius: 5px;
 }
 
-.textHeader_box > nav > *:hover {
-  background-color: #f2f2f2;
+.productHeader_box > *:hover {
+  background-color: rgba(140, 140, 140, 0.1450980392);
 }
 
 .menuHeader_box {
   justify-self: end;
+}
+
+.menuHeader_box > *:hover {
+  background-color: rgba(140, 140, 140, 0.1450980392);
 }
 
 .menuHeader_box > * {
@@ -75,17 +88,33 @@ header {
   header {
     grid-template-columns: 2fr 3fr 2fr;
   }
+  .productHeader_box > * {
+    display: none;
+  }
+  .menuHeader_box > a {
+    display: none;
+  }
+  .menuHeader_button {
+    background-color: rgba(140, 140, 140, 0.1450980392);
+  }
 }
 .sideBarContainer {
   padding: 3vh;
   position: absolute;
-  right: 0rem;
+  right: -135vw;
   top: 0;
-  width: 320px;
+  width: 12vw;
+  min-width: 260px;
   height: 100vh;
-  background-color: red;
+  background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
+  z-index: 1;
+  transition: 400ms ease-in-out;
+}
+
+.show {
+  right: 0vw;
 }
 
 .sideBarButton {
@@ -94,13 +123,23 @@ header {
   display: flex;
   justify-content: end;
   align-items: center;
-  background-color: yellow;
 }
 
 .sideBarLink {
-  padding: 1.5vh 0;
+  padding: 1vh 1vw;
+  margin: 0.3vh;
   color: #171a20;
   text-decoration: none;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-align: left;
+  border-radius: 5px;
+  transition: 300ms ease-in-out;
+}
+
+.sideBarLink:hover {
+  background-color: #dfdfdf;
 }
 
 .Car_container {
@@ -170,6 +209,7 @@ header {
 
 .CarTitle {
   font-size: 2.5rem;
+  line-height: 2rem;
   font-weight: 350;
   margin: 0 auto;
   text-align: center;
