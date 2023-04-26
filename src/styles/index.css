@@ -32,7 +32,7 @@ header {
   align-items: center;
   text-align: center;
   grid-template-columns: 2fr 3fr 2fr;
-  height: 6vh;
+  height: 10vh;
   font-size: 0.9rem;
 }
 
@@ -42,6 +42,7 @@ header {
   -o-object-fit: cover;
      object-fit: cover;
   height: 6vh;
+  margin-left: 1vw;
 }
 
 .textHeader_box {
@@ -64,6 +65,7 @@ header {
 .menuHeader_box {
   display: flex;
   justify-self: end;
+  margin-right: 1vw;
 }
 
 .menuHeader_box > *:hover {
@@ -208,7 +210,7 @@ header {
 }
 
 .CarTitleBox {
-  padding-top: 16vh;
+  padding-top: 14vh;
 }
 
 .CarTitle {
@@ -368,7 +370,7 @@ header {
   }
   .CarButtonBox {
     flex-direction: column;
-    margin-top: 52vh;
+    margin-top: 48vh;
     overflow: hidden;
   }
   .CarButtonBox > div {
@@ -419,7 +421,7 @@ footer > div > p {
   footer {
     display: flex;
     flex-direction: column;
-    margin-top: 5vh;
+    margin-top: 14vh;
   }
   footer > div {
     display: flex;

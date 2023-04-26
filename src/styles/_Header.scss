@@ -6,7 +6,7 @@ header {
   align-items: center;
   text-align: center;
   grid-template-columns: 2fr 3fr 2fr;
-  height: 6vh;
+  height: 10vh;
   font-size: 0.9rem;
 }
 
@@ -15,6 +15,7 @@ header {
   width: 120px;
   object-fit: cover;
   height: 6vh;
+  margin-left: 1vw;
 }
 
 .textHeader_box {
@@ -37,6 +38,7 @@ header {
 .menuHeader_box {
   display: flex;
   justify-self: end;
+  margin-right: 1vw;
 }
 
 .menuHeader_box > *:hover {
