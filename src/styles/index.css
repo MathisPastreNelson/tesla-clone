@@ -411,7 +411,7 @@ footer > div > p {
   footer {
     display: flex;
     flex-direction: column;
-    margin-top: 3vh;
+    margin-top: 5vh;
   }
   footer > div {
     display: flex;
