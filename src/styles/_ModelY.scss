@@ -237,8 +237,11 @@
     margin: 0 auto;
   }
 
+  .CarButtonBoxEnergy > * {
+    width: 100%;
+  }
   .CarButtonBoxEnergy > div > * {
-    margin: 0 auto;
+    margin: 1vh auto;
     width: 90%;
   }
 
@@ -247,8 +250,8 @@
     margin: 0 auto;
   }
 
-  .CarButtonBoxEnergy {
-    margin-top: 60vh;
+  .CarButtonBoxAccesory {
+    margin-top: 50vh;
   }
 
   .CarButtonBox > button:first-child {

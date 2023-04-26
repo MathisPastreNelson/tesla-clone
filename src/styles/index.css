@@ -370,16 +370,19 @@ header {
     width: 90%;
     margin: 0 auto;
   }
+  .CarButtonBoxEnergy > * {
+    width: 100%;
+  }
   .CarButtonBoxEnergy > div > * {
-    margin: 0 auto;
+    margin: 1vh auto;
     width: 90%;
   }
   .CarButtonBoxAccesory > div > * {
     width: 90%;
     margin: 0 auto;
   }
-  .CarButtonBoxEnergy {
-    margin-top: 60vh;
+  .CarButtonBoxAccesory {
+    margin-top: 50vh;
   }
   .CarButtonBox > button:first-child {
     margin-bottom: 1rem;
@@ -389,7 +392,7 @@ footer {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
-  margin-top: 4vh;
+  margin-top: 6vh;
   font-size: 0.75rem;
   color: rgb(116, 116, 116);
 }

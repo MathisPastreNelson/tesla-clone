@@ -14,9 +14,9 @@ export default function ModelS() {
           </p>
         </Fade>
       </div>
-      <div className="CarButtonBoxEnergy">
+      <div className="CarButtonBoxAccesory">
         <Fade direction="up" delay={750}>
-          <button>En savoir plus</button>
+          <button>Commander maintenant</button>
         </Fade>
       </div>
     </div>
