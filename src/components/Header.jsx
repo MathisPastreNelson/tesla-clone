@@ -3,10 +3,6 @@ import logo from "../assets/tesla-logo.png";
 
 export default function Header() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const background_Navbox = document.querySelector(".background_Navbox");
-  const nav_list = document.querySelectorAll(".productHeader_box a");
-  console.log(nav_list);
 
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
@@ -33,6 +29,56 @@ export default function Header() {
           Menu
         </button>
       </nav>
+      {/* La sideBar */}
+      {sidebarOpen ? (
+        <div className={`sideBarContainer ${sidebarOpen ? "show" : ""}`}>
+          <button className="sideBarButton" onClick={toggleSidebar}>
+            X
+          </button>
+          <a className="sideBarLink" href="">
+            Véhicules disponibles
+          </a>
+          <a className="sideBarLink" href="">
+            Véhicules D'occasion
+          </a>
+          <a className="sideBarLink" href="">
+            Reprise
+          </a>
+          <a className="sideBarLink" href="">
+            Essais
+          </a>
+          <a className="sideBarLink" href="">
+            Véhicules de société
+          </a>
+          <a className="sideBarLink" href="">
+            Cybertruck
+          </a>
+          <a className="sideBarLink" href="">
+            Roadster
+          </a>
+          <a className="sideBarLink" href="">
+            Électricité pour les professionnels
+          </a>
+          <a className="sideBarLink" href="">
+            Industries
+          </a>
+          <a className="sideBarLink" href="">
+            Énergie
+          </a>
+          <a className="sideBarLink" href="">
+            Nous trouver
+          </a>
+          <a className="sideBarLink" href="">
+            Événements
+          </a>
+          <a className="sideBarLink" href="">
+            Assistance
+          </a>
+          <a className="sideBarLink" href="">
+            Relations investisseurs
+          </a>
+        </div>
+      ) : null}
     </header>
   );
 }

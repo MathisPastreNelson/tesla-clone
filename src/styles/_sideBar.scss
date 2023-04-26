@@ -1,0 +1,26 @@
+.sideBarContainer {
+  padding: 3vh;
+  position: absolute;
+  right: -0rem;
+  top: 0;
+  width: 320px;
+  height: 100vh;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+}
+
+.sideBarButton {
+  border: 0;
+  margin: 0 0 3vh 0;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: yellow;
+}
+
+.sideBarLink {
+  padding: 1.5vh 0;
+  color: #171a20;
+  text-decoration: none;
+}
