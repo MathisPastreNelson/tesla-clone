@@ -228,7 +228,7 @@ header {
 
 .CarInformationSup {
   font-size: 1rem;
-  margin: 1vh auto;
+  margin: 3vh auto;
   text-align: center;
   text-underline-offset: 0.3rem;
   color: #171a20;
@@ -241,7 +241,8 @@ header {
   justify-content: center;
 }
 
-.CarButtonBox > * {
+.CarButtonBox > div > button {
+  border: none;
   margin: 0 1rem;
   height: 4.5vh;
   min-width: 300px;
@@ -250,13 +251,13 @@ header {
   font-weight: bold;
 }
 
-.CarButtonBox > button:first-child {
+.CarButtonBox > div:first-child > button {
   background-color: rgba(39, 39, 39, 0.886);
   color: white;
   border: 0;
 }
 
-.CarButtonBox > button:last-child {
+.CarButtonBox > div:last-child > button {
   background-color: rgba(229, 229, 229, 0.7137254902);
   color: rgba(23, 26, 32, 0.8196078431);
   border: 0;
@@ -266,10 +267,10 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 62vh;
+  margin-top: 60vh;
 }
 
-.CarButtonBoxEnergy > * {
+.CarButtonBoxEnergy > div > * {
   background-color: rgba(39, 39, 39, 0.886);
   color: white;
   border: 0;
@@ -287,7 +288,7 @@ header {
   margin-top: 65vh;
 }
 
-.CarButtonBoxAccesory > button {
+.CarButtonBoxAccesory > div > button {
   background-color: rgba(39, 39, 39, 0.886);
   color: white;
   border: 0;
@@ -350,25 +351,30 @@ header {
     padding-top: 20vh;
   }
   .CarTitle {
-    font-size: 1.6rem;
+    font-size: 2rem;
+  }
+  .CarReserve {
+    font-size: 0.8rem;
   }
   .CarInformationSup {
-    font-size: 0.9rem;
-    font-weight: 200;
+    font-size: 0.8rem;
   }
   .CarButtonBox {
     flex-direction: column;
-    margin-top: 54vh;
+    margin-top: 52vh;
   }
-  .CarButtonBox > * {
+  .CarButtonBox > div {
+    margin: 1vh auto;
+  }
+  .CarButtonBox > div > * {
     width: 90%;
     margin: 0 auto;
   }
-  .CarButtonBoxEnergy > * {
-    width: 90%;
+  .CarButtonBoxEnergy > div > * {
     margin: 0 auto;
+    width: 90%;
   }
-  .CarButtonBoxAccesory > * {
+  .CarButtonBoxAccesory > div > * {
     width: 90%;
     margin: 0 auto;
   }

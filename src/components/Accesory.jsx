@@ -1,20 +1,25 @@
 import React from "react";
+import { Fade } from "react-awesome-reveal";
 
 export default function ModelS() {
   return (
     <div id="Car_container6" className="Car_container6">
       <div className="CarTitleBox">
-        <h2 className="CarTitle">Accessoires</h2>
+        <Fade direction="up" delay={250}>
+          <h2 className="CarTitle">Accessoires</h2>
+        </Fade>
       </div>
       <div className="CarButtonBoxAccesory">
-        <button>Commander maintenant</button>
+        <Fade direction="up" delay={750}>
+          <button>Commander maintenant</button>
+        </Fade>
       </div>
       <footer>
         <div className="covoiturage">
           <p>Pensez à covoiturer #SeDéplacerMoinsPolluer</p>
         </div>
         <div>
-          <p>Tesla © 2023</p>
+          <p>Mathis © 2023</p>
           <p>Mentions légales</p>
           <p>Contact</p>
           <p>Carrières</p>
