@@ -55,6 +55,9 @@ header {
   border: 0px;
   font-size: 0.9rem;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (max-width: 1350px) {

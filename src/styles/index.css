@@ -82,6 +82,9 @@ header {
   border: 0px;
   font-size: 0.9rem;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (max-width: 1350px) {
@@ -239,6 +242,7 @@ header {
   margin-top: 63vh;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .CarButtonBox > div > button {
@@ -267,6 +271,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 60vh;
 }
 
@@ -285,6 +290,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 65vh;
 }
 
