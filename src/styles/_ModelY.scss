@@ -226,6 +226,7 @@
   .CarButtonBox {
     flex-direction: column;
     margin-top: 52vh;
+    overflow: hidden;
   }
 
   .CarButtonBox > div {

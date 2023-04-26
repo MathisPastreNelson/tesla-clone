@@ -362,6 +362,7 @@ header {
   .CarButtonBox {
     flex-direction: column;
     margin-top: 52vh;
+    overflow: hidden;
   }
   .CarButtonBox > div {
     margin: 1vh auto;
